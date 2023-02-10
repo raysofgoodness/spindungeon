@@ -1,0 +1,9 @@
+.burger {
+  @include burger;
+
+  z-index: 600;
+
+  @include breakpoint($brp-1024) {
+    display: none;
+  }
+}

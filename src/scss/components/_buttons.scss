@@ -1,0 +1,20 @@
+.btn {
+  display: inline-block;
+  padding: 14px 40px;
+  font-size: 20px;
+  font-weight: 700;
+  color: $white-color;
+  background-image: $linear-color;
+  text-align: center;
+  transition: all 0.3s linear;
+
+  @include breakpoint($brp-1024) {
+    min-width: 182px;
+    font-size: 16px;
+  }
+
+  @include hover {
+    transform: rotateX(30deg);
+    box-shadow: 0 3px 15px rgba(250, 250, 250, 0.4);
+  }
+}

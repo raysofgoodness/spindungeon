@@ -1,0 +1,9 @@
+.logo {
+  display: block;
+
+  &__icon {
+    path {
+      fill: $white-color;
+    }
+  }
+}

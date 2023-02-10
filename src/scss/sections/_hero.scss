@@ -1,0 +1,48 @@
+.hero {
+  @include fluidSize(140px, 280px, 320px, $content-width, 'padding-top');
+
+  @include bg-cover;
+
+  margin-top: 62px;
+  height: 770px;
+  background-image: url("../img/hero-image.jpg");
+  background-position: 67%;
+  background-color: $black-color;
+
+  @include breakpoint($brp-768) {
+    margin-top: 0;
+    height: 100vh;
+    background-position: center;
+    text-align: center;
+  }
+
+  @include breakpoint($brp-1024) {
+    animation-name: backgroundEffect;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+
+  &__content {
+    @include breakpoint($brp-768) {
+      margin: 0 auto;
+      max-width: 648px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    line-height: 1;
+  }
+
+  &__description {
+    line-height: 1.2;
+  }
+}
+
+@keyframes backgroundEffect {
+  0% {background-position: 0% 0%}
+  25% {background-position: 30% 10%}
+  50% {background-position: 0 30%}
+  75% {background-position: 30% 30%}
+  100% {background-position: 0% 0%}
+}

@@ -1,1 +1,4 @@
-console.log('components');
+import { animateHeader } from "./components/header";
+
+
+animateHeader();

@@ -4,7 +4,17 @@
 @import "fonts";
 @import "settings";
 
+// typography
+@import "./components/typography";
+
 // components
+@import "./components/logo";
+@import "./components/buttons";
+@import "./components/burger";
+@import "./components/rating";
 @import "./components/header";
+@import "./components/nav";
 
 // sections
+@import "./sections/hero";
+@import "./sections/free";

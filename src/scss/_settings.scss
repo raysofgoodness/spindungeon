@@ -12,8 +12,7 @@ html {
   overflow-x: hidden;
   height: 100%;
   font-family: $font-family;
-  font-size: 14px;
-  line-height: 1.4;
+  font-size: 16px;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -22,7 +21,8 @@ html {
   min-width: 320px;
   min-height: 100%;
   font-size: 16px;
-  cursor: none;
+  color: $white-color;
+  background-color: $black-color;
 }
 
 img {

@@ -1,5 +1,7 @@
 /* stylelint-disable */
 
+@use "sass:math";
+
 @mixin bg-cover {
   background-position: center;
   background-size: cover;
@@ -57,4 +59,19 @@ $browser-context: 16; // Default
 @mixin pseudo() {
     content: "";
     display: block;
+}
+
+@mixin fluidSize($min, $max, $brp1, $brp2, $property) {
+  #{$property}: $min;
+
+  @include breakpoint($brp1) {
+    $k: math.div($max - $min, $brp2 - $brp1);
+    $b: $min - ($k * $brp1);
+    $temp: $k * 100vw;
+    #{$property}: calc(#{$temp} + #{$b});
+  }
+
+  @include breakpoint($brp2) {
+    #{$property}: $max;
+  }
 }

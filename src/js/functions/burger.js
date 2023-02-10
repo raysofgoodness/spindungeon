@@ -22,21 +22,4 @@ import { enableScroll } from '../functions/enable-scroll';
     }
   });
 
-  overlay?.addEventListener('click', () => {
-    burger?.setAttribute('aria-expanded', 'false');
-    burger?.setAttribute('aria-label', 'Открыть меню');
-    burger.classList.remove('burger--active');
-    menu.classList.remove('menu--active');
-    enableScroll();
-  });
-
-  menuItems?.forEach(el => {
-    el.addEventListener('click', () => {
-      burger?.setAttribute('aria-expanded', 'false');
-      burger?.setAttribute('aria-label', 'Открыть меню');
-      burger.classList.remove('burger--active');
-      menu.classList.remove('menu--active');
-      enableScroll();
-    });
-  });
 })();

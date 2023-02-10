@@ -1,7 +1,7 @@
 // base
-$font-family: 'Raleway', sans-serif;
+$font-family: 'Noto-Sans', sans-serif;
 $content-width: 1170px;
-$container-offset: 15px;
+$container-offset: 16px;
 $container-width: calc(#{$content-width} + (#{$container-offset * 2}));
 
 // colors
@@ -9,4 +9,8 @@ $black-color: #060100;
 $white-color: #fff;
 $brand-color: #febb06;
 $alto-color: #d6d6d6;
+$mine-shaft: #212121;
 $linear-color: linear-gradient(86.42deg, #FFC700 -1.87%, #F3254C 119.59%, #F32525 119.59%);
+
+// transform
+$perspective: 700px;
